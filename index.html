@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Rafael Henrique de Sousa Vieira">
+  <meta name="keywords"
+    content="programação, html, css, frontend mentor, NFT preview card component, Rafael Henrique de Sousa Vieira, NFT Preview, Frontend, Front, end">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: hsl(217, 54%, 11%);
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      background-color: hsl(216, 50%, 16%);
+    }
+
+    main .equilibrium {
+      position: relative;
+      width: 18rem;
+      border-radius: 1rem;
+      transition: 0.25s;
+      cursor: pointer;
+    }
+
+    main .filtro {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      background-color: hsl(178, 100%, 50%, 60%);
+      width: 18rem;
+      height: 18rem;
+      border-radius: 1rem;
+      opacity: 0;
+    }
+
+    main .filtro:hover {
+      opacity: 1;
+    }
+
+    .text h1 {
+      color: hsl(0, 0%, 100%);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: 22px;
+      padding: 1.5rem 0;
+      transition: 0.25s;
+      cursor: pointer;
+    }
+
+    .text h1:hover {
+      color: hsl(178, 100%, 50%);
+    }
+
+    .text p {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      padding-bottom: 1.5rem;
+      color: hsl(215, 51%, 70%);
+      max-width: 18rem;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .eth {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+    }
+
+    .eth img {
+      max-width: 20px;
+      max-height: 20px;
+      width: auto;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .eth p {
+      color: hsl(178, 100%, 50%);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+    }
+
+    .days {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+    }
+
+    .days img {
+      max-width: 20px;
+      max-height: 20px;
+      width: auto;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .days p {
+      color: hsl(215, 51%, 70%);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+    }
+
+    hr {
+      border: 0;
+      border-top: 0.1px solid #CCC;
+    }
+
+    .credits {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+      padding-top: 1rem;
+    }
+
+    .credits img {
+      max-width: 35px;
+      max-height: 35px;
+      width: auto;
+      height: auto;
+      object-fit: cover;
+      border: hsl(0, 0%, 100%) 1px solid;
+    }
+
+    .text_credits {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .text_credits .creationof {
+      color: hsl(215, 51%, 70%);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+    }
+
+    .text_credits .name {
+      color: hsl(0, 0%, 100%);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      transition: 0.25s;
+      cursor: pointer;
+    }
+
+    .text_credits .name:hover {
+      color: hsl(178, 100%, 50%);
+    }
+
+    .attribution {
+      position: absolute;
+      bottom: 0;
+      margin: 1rem 0;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <img class="equilibrium" src="/HTML/NFT Preview/images/image-equilibrium.jpg" alt="image-equilibrium.jpg">
+    <div class="filtro"><img src="/HTML/NFT Preview/images/icon-view.svg" alt="/icon-view.svg"></div>
+    </div>
+
+    <section class="text">
+      <h1>Equilibrium #3429</h1>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+
+      <div class="info">
+        <div class="eth">
+          <img src="/HTML/NFT Preview/images/icon-ethereum.svg" alt="icon-ethereum.svg">
+          <p>0.041 ETH</p>
+        </div>
+
+        <div class="days">
+          <img src="/HTML/NFT Preview/images/icon-clock.svg" alt="icon-clock.svg">
+          <p>3 days left</p>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="credits">
+      <img src="/HTML/NFT Preview/images/image-avatar.png" alt="image-avatar.png">
+
+      <div class="text_credits">
+        <p class="creationof">Creation of</p>
+        <p class="name">Jules Wyvern</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/RafaelHDSV" target="_blank">Rafael Henrique de Sousa Vieira</a>.
+  </div>
+</body>
+
+</html>
